@@ -25,7 +25,7 @@ client.on('ready', function (message) {
     console.log(`Logged in as ${client.user.tag}!`);
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
     client.user.setActivity(`ดูดกัญชา`);
-    //var channel = client.channels.get('308301795736944644');
+    //var channel = client.channels.get('467927688942977024');
     //channel.sendMessage('@everyone บอทมาแล้วจ้าาาาาาา ' + greetMsg + ':pray::skin-tone-3: :pray::skin-tone-3: :pray::skin-tone-3:')
     //channel.sendMessage('อย่ายุ่งกะกูกูงอล ชิชิชิ' )
     //channel.sendMessage('บอทไปก่อนน้าาาา บุ้ยบุย...' )
