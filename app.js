@@ -16,19 +16,19 @@ client.on('ready', function (message) {
     let greetMsg = "";
 
     if (curHr < 12) {
-        greetMsg = 'สวัสดีตอนเช้า';
+        greetMsg = 'Selamat Pagi';
     } else if (curHr < 18) {
-        greetMsg = 'สวัสดีตอนบ่าย';
+        greetMsg = 'Selamat Siang';
     } else {
-        greetMsg = 'สวัสดีตอนเย็น';
+        greetMsg = 'Selamat Malam';
     }
     console.log(`Logged in as ${client.user.tag}!`);
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
     client.user.setActivity(`Indra Winandar`);
     //var channel = client.channels.get('466887450602504192');
-    //channel.sendMessage('@everyone บอทมาแล้วจ้าาาาาาา ' + greetMsg + ':pray::skin-tone-3: :pray::skin-tone-3: :pray::skin-tone-3:')
-    //channel.sendMessage('อย่ายุ่งกะกูกูงอล ชิชิชิ' )
-    //channel.sendMessage('บอทไปก่อนน้าาาา บุ้ยบุย...' )
+    //channel.sendMessage('@everyone Lihat Profil ' + greetMsg + ':pray::skin-tone-3: :pray::skin-tone-3: :pray::skin-tone-3:')
+    //channel.sendMessage('Jangan Main-Main' )
+    //channel.sendMessage('Aku Tidak Tahu Apa Yg Harus Kulakukan..' )
 });
 
 function search(key, array, remove) {
@@ -72,7 +72,7 @@ client.on('message', function (message) {
 
     if (message.content == '!unmute') {
         if (search(message.author.id, arrMuteBot, true)) {
-            message.reply('unmute เรียบร้อย คิดถึงเค้าละซิ้');
+            message.reply('unmute เรียบร้อย คิดถึงyละซิ้');
         } else {
             return console.log('user not found : ', message.author.id);
         }
