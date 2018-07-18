@@ -16,15 +16,15 @@ client.on('ready', function (message) {
     let greetMsg = "";
 
     if (curHr < 12) {
-        greetMsg = 'สวัสดีตอนเช้า';
+        greetMsg = 'selamat pagi';
     } else if (curHr < 18) {
-        greetMsg = 'สวัสดีตอนบ่าย';
+        greetMsg = 'selamat siang';
     } else {
-        greetMsg = 'สวัสดีตอนเย็น';
+        greetMsg = 'selamat malam';
     }
     console.log(`Logged in as ${client.user.tag}!`);
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-    client.user.setActivity(`ดูดกัญชา`);
+    client.user.setActivity(`HAGO`);
     //var channel = client.channels.get('300568765001891843');
     //channel.sendMessage('@everyone บอทมาแล้วจ้าาาาาาา ' + greetMsg + ':pray::skin-tone-3: :pray::skin-tone-3: :pray::skin-tone-3:')
     //channel.sendMessage('อย่ายุ่งกะกูกูงอล ชิชิชิ' )
