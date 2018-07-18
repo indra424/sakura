@@ -4,6 +4,6 @@
     "simsimiOption": {
         "lc": "id",
         "ft": "0.0",
-        "key": "key_simi"
+        "key": "process.env.key_simi"
     }
 }
