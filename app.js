@@ -76,7 +76,7 @@ client.on('message', function (message) {
 
     if (message.content == '!unmute') {
         if (search(message.author.id, arrMuteBot, true)) {
-            message.reply('unmute Aku Merindukanmu');
+            message.reply('Aku Merindukanmu');
         } else {
             return console.log('user not found : ', message.author.id);
         }
@@ -89,7 +89,7 @@ client.on('message', function (message) {
     if (message.content == '!mute') {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
-        message.reply('Soppeng mute Jika Kamu Mau unmute Cetak !unmute');
+        message.reply('Aku Diam Aja Deh....');
     } else if (message.content != '!mute' && message.content != '!unmute') {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
