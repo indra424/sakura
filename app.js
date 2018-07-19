@@ -4,7 +4,8 @@ const Simsimi = require('simsimi');
 const {
     token,
     channelChatbotId,
-    quest
+    questp1,
+    questj1
 } = require('./config.json');
 
 var simsimi = new Simsimi({
