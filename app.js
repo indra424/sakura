@@ -4,7 +4,7 @@ const Simsimi = require('simsimi');
 const {
     token,
     channelChatbotId,
-    env
+    quest
 } = require('./config.json');
 
 var simsimi = new Simsimi({
@@ -83,8 +83,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content == 'env.P_1') {
-            message.reply('env.J_1');
+    if (message.content == 'quest.P_1') {
+            message.reply('quest.J_1');
         }
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
@@ -93,7 +93,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != 'env.P_1') {
+    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != 'quest.P_1') {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
