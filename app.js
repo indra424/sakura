@@ -5,6 +5,10 @@ const {
     token,
     channelChatbotId
 } = require('./config.json');
+const {
+    P1,
+    J1
+} = require('./question.json');
 
 var simsimi = new Simsimi({
         lc : process.env.LC_SIMI,
