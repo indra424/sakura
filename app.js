@@ -6,15 +6,6 @@ const {
     channelChatbotId,
 } = require('./config.json');
 
-var que = [
-    process.env.P_1,
-    process.env.P_2
-    ];
-var ans = [
-    process.env.J_1,
-    process.env.J_2
-    ];
-
 var simsimi = new Simsimi({
         lc : process.env.LC_SIMI,
         ft : process.env.FT_SIMI,
