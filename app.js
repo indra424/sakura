@@ -11,6 +11,7 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
+var waktu = new Date();
 var que = [
     process.env.P_1,
     process.env.P_2,
@@ -103,7 +104,7 @@ client.on('message', function (message) {
     }
     //jawaban khusus
     if (message.content == 'Jam berapa sekarang?')
-        message.reply(today.getHours());
+        message.reply(waktu.getHours());
     if (message.content == que[0])
         message.reply(ans[0]);
     if (message.content == que[1])
