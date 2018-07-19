@@ -5,12 +5,15 @@ const {
     token,
     channelChatbotId,
 } = require('./config.json');
-const p1 = process.env.P_1;
-const j1 = process.env.J_1;
-const p2 = process.env.P_2;
-const j2 = process.env.J_2;
-const p3 = process.env.P_3;
-const j3 = process.env.J_3;
+
+var que = [
+    process.env.P_1,
+    process.env.P_2
+    ];
+var ans = [
+    process.env.J_1,
+    process.env.J_2
+    ];
 
 var simsimi = new Simsimi({
         lc : process.env.LC_SIMI,
@@ -88,8 +91,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content == p1) {
-            message.reply(j1);
+    if (message.content == que[1]) {
+            message.reply(ans[1]);
         }
     if (message.content == p2) {
             message.reply(j2);
@@ -101,7 +104,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != p1 && message.content != p2) {
+    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != que.length && message.content != p2) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
