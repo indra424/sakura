@@ -13,11 +13,23 @@ var simsimi = new Simsimi({
     });
 var que = [
     process.env.P_1,
-    process.env.P_2
+    process.env.P_2,
+    process.env.P_3,
+    process.env.P_4,
+    process.env.P_5,
+    process.env.P_6,
+    process.env.P_7,
+    process.env.P_8
     ];
 var ans = [
     process.env.J_1,
-    process.env.J_2
+    process.env.J_2,
+    process.env.J_3,
+    process.env.J_4,
+    process.env.J_5,
+    process.env.J_6,
+    process.env.J_7,
+    process.env.J_8
     ];
 
 var arrMuteBot = [];
