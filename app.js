@@ -85,9 +85,6 @@ client.on('message', function (message) {
     if (message.content == 'siapa kamu?') {
             message.reply('aku Park Chanyeol');
         }
-            else {
-                return
-                }
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
 
@@ -95,7 +92,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' && message.content != '!unmute') {
+    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != 'siapa kamu?') {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
