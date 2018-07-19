@@ -104,7 +104,21 @@ client.on('message', function (message) {
     //jawaban khusus
     if (message.content == que[0])
         message.reply(ans[0]);
-   
+    if (message.content == que[1])
+        message.reply(ans[1]);
+    if (message.content == que[2])
+        message.reply(ans[2]);
+    if (message.content == que[3])
+        message.reply(ans[3]);
+    if (message.content == que[4])
+        message.reply(ans[4]);
+    if (message.content == que[5])
+        message.reply(ans[5]);
+    if (message.content == que[6])
+        message.reply(ans[6]);
+    if (message.content == que[7])
+        message.reply(ans[7]);
+    
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
 
@@ -112,7 +126,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != que[0] ) {
+    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != que[0] && message.content != que[1] && message.content != que[2] && message.content != que[3] && message.content != que[4] && message.content != que[5] && message.content != que[6] && message.content != que[7] ) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
