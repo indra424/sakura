@@ -91,8 +91,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content == que[1]) {
-            message.reply(ans[1]);
+    if (message.content == que(1)) {
+            message.reply(ans(1));
         }
     if (message.content == p2) {
             message.reply(j2);
