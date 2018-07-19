@@ -11,7 +11,6 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
-var env = 'process.env.';
 
 var arrMuteBot = [];
 client.on('ready', function (message) {
@@ -83,8 +82,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content == 'env(P_1)') {
-            message.reply('env(J_1)');
+    if (message.content == 'env.P_1') {
+            message.reply('env.J_1');
         }
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
