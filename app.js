@@ -5,8 +5,8 @@ const {
     token,
     channelChatbotId,
 } = require('./config.json');
-const quest1 = process.env.P_1;
-const quest2 = process.env.J_1;
+const p1 = process.env.P_1;
+const j1 = process.env.J_1;
 
 var simsimi = new Simsimi({
         lc : process.env.LC_SIMI,
@@ -84,8 +84,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content == quest1) {
-            message.reply(quest2);
+    if (message.content == p1) {
+            message.reply(j1);
         }
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
@@ -94,7 +94,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != quest1) {
+    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != p1) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
