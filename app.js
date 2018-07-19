@@ -85,6 +85,9 @@ client.on('message', function (message) {
     if (message.content == 'siapa kamu?') {
         if (search(message.author.id)) {
             message.reply('aku Park Chanyeol');
+            } else {
+                return
+                }
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
 
