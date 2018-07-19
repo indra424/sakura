@@ -11,6 +11,14 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
+var que = [
+    process.env.P_1,
+    process.env.P_2
+    ];
+var ans = [
+    process.env.J_1,
+    process.env.J_2
+    ];
 
 var arrMuteBot = [];
 client.on('ready', function (message) {
@@ -82,6 +90,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
+    if (message.content == que[0])
+        message.reply(ans[0]);
    
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
@@ -90,7 +100,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' && message.content != '!unmute') {
+    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != que.length ) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
