@@ -9,6 +9,8 @@ const p1 = process.env.P_1;
 const j1 = process.env.J_1;
 const p2 = process.env.P_2;
 const j2 = process.env.J_2;
+const p3 = process.env.P_3;
+const j3 = process.env.J_3;
 
 var simsimi = new Simsimi({
         lc : process.env.LC_SIMI,
