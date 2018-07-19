@@ -102,7 +102,7 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content == 'Jam berapa sekarang?)
+    if (message.content == 'Jam berapa sekarang?')
         message.reply(today.getHours());
     if (message.content == que[0])
         message.reply(ans[0]);
