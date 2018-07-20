@@ -12,6 +12,7 @@ var simsimi = new Simsimi({
         key: process.env.KEY_SIMI
     });
 var waktu = new Date();
+var question = que.length;
 var que = [
     process.env.P_1,
     process.env.P_2,
@@ -129,7 +130,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != que[0] && message.content != que[1] && message.content != que[2] && message.content != que[3] && message.content != que[4] && message.content != que[5] && message.content != que[6] && message.content != que[7] ) {
+    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != que[0] && message.content != que[1] && message.content != que[2] && message.content != que[3] && message.content != que[4] && message.content != que[5] && message.content != que[6] && message.content != question ) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
