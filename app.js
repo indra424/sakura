@@ -223,7 +223,8 @@ client.on('message', function (message) {
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
     } else if (message.content != '!mute' 
-              && message.content != '!unmute' 
+              && message.content != '!unmute'
+              && message.mentions = <@469365465416990740>
               && message.content != que[0] 
               && message.content != que[1] 
               && message.content != que[2] 
