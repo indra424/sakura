@@ -222,21 +222,42 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' && message.content != '!unmute' 
+    } else if (message.content != '!mute' 
+              && message.content != '!unmute' 
               && message.content != que[0] 
               && message.content != que[1] 
-               && message.content != que[2] 
-               && message.content != que[3] 
-               && message.content != que[4] 
+              && message.content != que[2] 
+              && message.content != que[3] 
+              && message.content != que[4] 
               && message.content != que[5] 
-               && message.content != que[6] 
-               && message.content != que[7]
-               && message.content != que[8]
-               && message.content != que[9] 
-               && message.content != que[10] && message.content != que[11] && message.content != que[11] && message.content != que[12] && message.content != que[13] && message.content != que[14]
+              && message.content != que[6] 
               && message.content != que[7]
-              && message.content != que[7]
-              && message.content != que[7] ) {
+              && message.content != que[8]
+              && message.content != que[9] 
+              && message.content != que[10] 
+              && message.content != que[11] 
+              && message.content != que[11] 
+              && message.content != que[12] 
+              && message.content != que[13] 
+              && message.content != que[14]
+              && message.content != que[15]
+              && message.content != que[16]
+              && message.content != que[17]
+              && message.content != que[18] 
+              && message.content != que[19]
+              && message.content != que[20]
+              && message.content != que[21]
+              && message.content != que[22]
+              && message.content != que[23] 
+              && message.content != que[24]
+              && message.content != que[25]
+              && message.content != que[26]
+              && message.content != que[27]
+              && message.content != que[28] 
+              && message.content != que[29]
+              && message.content != que[30]
+              && message.content != que[31]
+              ) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
