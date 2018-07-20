@@ -153,7 +153,54 @@ client.on('message', function (message) {
         message.reply(ans[6]);
     if (message.content == que[7])
         message.reply(ans[7]);
-    
+    if (message.content == que[8])
+        message.reply(ans[8]);
+    if (message.content == que[9])
+        message.reply(ans[9]);
+    if (message.content == que[10])
+        message.reply(ans[10]);
+    if (message.content == que[11])
+        message.reply(ans[11]);
+    if (message.content == que[12])
+        message.reply(ans[12]);
+    if (message.content == que[13])
+        message.reply(ans[13]);
+    if (message.content == que[14])
+        message.reply(ans[14]);
+    if (message.content == que[15])
+        message.reply(ans[15]);
+    if (message.content == que[16])
+        message.reply(ans[16]);
+    if (message.content == que[17])
+        message.reply(ans[17]);
+    if (message.content == que[18])
+        message.reply(ans[18]);
+    if (message.content == que[3])
+        message.reply(ans[3]);
+    if (message.content == que[4])
+        message.reply(ans[4]);
+    if (message.content == que[5])
+        message.reply(ans[5]);
+    if (message.content == que[6])
+        message.reply(ans[6]);
+    if (message.content == que[7])
+        message.reply(ans[7]);
+    if (message.content == que[0])
+        message.reply(ans[0]);
+    if (message.content == que[1])
+        message.reply(ans[1]);
+    if (message.content == que[2])
+        message.reply(ans[2]);
+    if (message.content == que[3])
+        message.reply(ans[3]);
+    if (message.content == que[4])
+        message.reply(ans[4]);
+    if (message.content == que[5])
+        message.reply(ans[5]);
+    if (message.content == que[6])
+        message.reply(ans[6]);
+    if (message.content == que[7])
+        message.reply(ans[7]);
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
 
