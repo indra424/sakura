@@ -222,7 +222,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.mentions.id == client.user.id
+    } else if (message.content.startsWith == 'hi'
               && message.content != '!mute' 
               && message.content != '!unmute'
               && message.content != que[0] 
