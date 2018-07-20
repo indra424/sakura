@@ -12,7 +12,7 @@ var simsimi = new Simsimi({
         key: process.env.KEY_SIMI
     });
 var waktu = new Date();
-var question = que.length;
+var question = que.length();
 var que = [
     process.env.P_1,
     process.env.P_2,
