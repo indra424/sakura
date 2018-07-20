@@ -175,32 +175,32 @@ client.on('message', function (message) {
         message.reply(ans[17]);
     if (message.content == que[18])
         message.reply(ans[18]);
-    if (message.content == que[3])
-        message.reply(ans[3]);
-    if (message.content == que[4])
-        message.reply(ans[4]);
-    if (message.content == que[5])
-        message.reply(ans[5]);
-    if (message.content == que[6])
-        message.reply(ans[6]);
-    if (message.content == que[7])
-        message.reply(ans[7]);
-    if (message.content == que[0])
-        message.reply(ans[0]);
-    if (message.content == que[1])
-        message.reply(ans[1]);
-    if (message.content == que[2])
-        message.reply(ans[2]);
-    if (message.content == que[3])
-        message.reply(ans[3]);
-    if (message.content == que[4])
-        message.reply(ans[4]);
-    if (message.content == que[5])
-        message.reply(ans[5]);
-    if (message.content == que[6])
-        message.reply(ans[6]);
-    if (message.content == que[7])
-        message.reply(ans[7]);
+    if (message.content == que[19])
+        message.reply(ans[19]);
+    if (message.content == que[20])
+        message.reply(ans[20]);
+    if (message.content == que[21])
+        message.reply(ans[21]);
+    if (message.content == que[22])
+        message.reply(ans[22]);
+    if (message.content == que[23])
+        message.reply(ans[23]);
+    if (message.content == que[24])
+        message.reply(ans[24]);
+    if (message.content == que[25])
+        message.reply(ans[25]);
+    if (message.content == que[26])
+        message.reply(ans[26]);
+    if (message.content == que[27])
+        message.reply(ans[27]);
+    if (message.content == que[28])
+        message.reply(ans[28]);
+    if (message.content == que[29])
+        message.reply(ans[29]);
+    if (message.content == que[30])
+        message.reply(ans[30]);
+    if (message.content == que[31])
+        message.reply(ans[31]);
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
 
