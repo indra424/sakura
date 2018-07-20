@@ -36,7 +36,14 @@ var que = [
     process.env.P_21,
     process.env.P_22,
     process.env.P_23,
-    process.env.P_24
+    process.env.P_24,
+    process.env.P_25,
+    process.env.P_26,
+    process.env.P_27,
+    process.env.P_28,
+    process.env.P_29,
+    process.env.P_30,
+    process.env.P_31
     ];
 var ans = [
     process.env.J_1,
@@ -62,7 +69,14 @@ var ans = [
     process.env.J_21,
     process.env.J_22,
     process.env.J_23,
-    process.env.J_24
+    process.env.J_24,
+    process.env.J_25,
+    process.env.J_26,
+    process.env.J_27,
+    process.env.J_28,
+    process.env.J_29,
+    process.env.J_30,
+    process.env.J_31
     ];
 
 var arrMuteBot = [];
