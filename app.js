@@ -224,7 +224,6 @@ client.on('message', function (message) {
         message.reply('Aku Diam Aja Deh....');
     } else if (message.content != '!mute' 
               && message.content != '!unmute'
-              && message.content.startWith('hi')
               && message.content != que[0] 
               && message.content != que[1] 
               && message.content != que[2] 
