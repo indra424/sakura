@@ -222,7 +222,21 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' && message.content != '!unmute' && message.content != que[0] && message.content != que[1] && message.content != que[2] && message.content != que[3] && message.content != que[4] && message.content != que[5] && message.content != que[6] && message.content != que[7] ) {
+    } else if (message.content != '!mute' && message.content != '!unmute' 
+              && message.content != que[0] 
+              && message.content != que[1] 
+               && message.content != que[2] 
+               && message.content != que[3] 
+               && message.content != que[4] 
+              && message.content != que[5] 
+               && message.content != que[6] 
+               && message.content != que[7]
+               && message.content != que[8]
+               && message.content != que[9] 
+               && message.content != que[10] && message.content != que[11] && message.content != que[11] && message.content != que[12] && message.content != que[13] && message.content != que[14]
+              && message.content != que[7]
+              && message.content != que[7]
+              && message.content != que[7] ) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
