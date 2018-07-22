@@ -12,6 +12,7 @@ var simsimi = new Simsimi({
         key: process.env.KEY_SIMI
     });
 var waktu = new Date();
+var jam = waktu.getHours();
 var que = [
     process.env.P_1,
     process.env.P_2,
