@@ -150,6 +150,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
+    if (jam == 11)
+        (message.channel.send('selamat pagi hijra');
     if (message.content == 'Jam berapa sekarang?')
         message.reply(waktu.toUTCString());
     if (message.content == que[0])
