@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const Simsimi = require('simsimi');
+const schedule = require('node-schedule-tz');
 const {
     token,
     channelChatbotId,
