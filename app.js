@@ -103,11 +103,11 @@ client.on('ready', function (message) {
 });
 //pesan terjadwal
 client.on('message'),function (message) {
-    if (jam == '2')
+    if (jam == '2'{
     var pesan = client.channels.get(channelChatbotId);
     pesan.sendMessage('selamat siang hijra');
     }
-return;
+};
 
 function search(key, array, remove) {
     if (remove) {
