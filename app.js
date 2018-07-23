@@ -79,7 +79,13 @@ var ans = [
     process.env.J_30,
     process.env.J_31
     ];
-
+//pesan terjadwal
+client.on('message'),function (message) {
+    if (jam == '2'{
+    var pesan = client.channels.get(channelChatbotId);
+    pesan.sendMessage('selamat siang hijra');
+    }
+};
 var arrMuteBot = [];
 client.on('ready', function (message) {
     let today = new Date();
@@ -101,14 +107,6 @@ client.on('ready', function (message) {
     //channel.sendMessage('Jangan Main-Main' )
     //channel.sendMessage('Aku Tidak Tahu Apa Yg Harus Kulakukan..' )
 });
-//pesan terjadwal
-client.on('message'),function (message) {
-    if (jam == '2'{
-    var pesan = client.channels.get(channelChatbotId);
-    pesan.sendMessage('selamat siang hijra');
-    }
-};
-
 function search(key, array, remove) {
     if (remove) {
         for (let i = 0; i < array.length; i++) {
@@ -140,8 +138,8 @@ client.on('message', function (message) {
         if (message.content.indexOf('!msg') === 0) {
             let msg = message.content.split(' ');
             if (msg.length > 1) {
-                var channels = client.channels.get(channelChatbotId);
-                channels.sendMessage(msg[1]);
+                var channelku = client.channels.get(channelChatbotId);
+                channelku.sendMessage(msg[1]);
             }
         }
         return;
