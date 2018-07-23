@@ -150,8 +150,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if(jam >= 17 && jam < 22)
-       client.channels.get(channelChatbotId).send('My Message');
+    if(jam >= 17 && jam <= 22)
+       client.channels.get(channelChatbotId).send('Kak hijra jangan begadang yah!!..nanti sakit lagi');
     if (message.content == cekwaktu)
         message.reply(jam + 8);
     if (message.content == que[0])
