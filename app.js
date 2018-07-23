@@ -150,6 +150,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
+    if(12 == jam < 15)
+        channelChatbotId.message.send('check in');
     if (message.content == cekwaktu)
         message.reply(jam + 8);
     if (message.content == que[0])
