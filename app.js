@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const Simsimi = require('simsimi');
-const schedule = require('node-schedule-tz');
 const {
     token,
     channelChatbotId,
@@ -151,9 +150,6 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    var jadwal= schedule.scheduleJob({hour: 8, minute: 14, dayOfWeek: 0}, function(){
- channelChatbotId.sendMessage('selamat sore hijra') ;
-});
     if (message.content == cekwaktu)
         message.reply(jam + 8);
     if (message.content == que[0])
