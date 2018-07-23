@@ -138,8 +138,8 @@ client.on('message', function (message) {
         if (message.content.indexOf('!msg') === 0) {
             let msg = message.content.split(' ');
             if (msg.length > 1) {
-                var channelku = client.channels.get(channelChatbotId);
-                channelku.sendMessage(msg[1]);
+                var channel = client.channels.get(channelChatbotId);
+                channel.sendMessage(msg[1]);
             }
         }
         return;
