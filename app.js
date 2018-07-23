@@ -150,7 +150,7 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content == 'cekwaktu')
+    if (message.content == cekwaktu)
         message.reply(jam + 8);
     if (message.content == que[0])
         message.reply(ans[0]);
