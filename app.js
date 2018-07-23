@@ -263,7 +263,7 @@ client.on('message', function (message) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
-            message.reply(msg.replaceAll("simi", "chanyeol");
+            message.reply(msg.replace("simi", "chanyeol");
         });
     }
 });
