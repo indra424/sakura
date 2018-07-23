@@ -80,7 +80,7 @@ var ans = [
     process.env.J_31
     ];
 //pesan terjadwal
-    if (jam == '2'){
+    if (jam == 2){
     channelChatBotId.sendMessage('selamat siang hijra');
         };
 var arrMuteBot = [];
