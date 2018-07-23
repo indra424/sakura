@@ -150,7 +150,7 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if(jam == 12 || jam < 15)
+    if(jam == 9 || jam < 11)
        client.channels.get(channelChatbotId).send('My Message');
     if (message.content == cekwaktu)
         message.reply(jam + 8);
