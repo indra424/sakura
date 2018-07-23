@@ -151,7 +151,7 @@ client.on('message', function (message) {
     }
     //jawaban khusus
     if (message.content == 'Jam berapa sekarang?')
-        message.reply(waktu.toUTCString());
+        message.reply(jam);
     if (message.content == que[0])
         message.reply(ans[0]);
     if (message.content == que[1])
