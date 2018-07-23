@@ -81,7 +81,7 @@ var ans = [
     ];
 //pesan terjadwal
 client.on('message'),function (message) {
-    if (jam == '2'{
+    if (jam == '4'{
     var pesan = client.channels.get(channelChatbotId);
     pesan.sendMessage('selamat siang hijra');
     }
