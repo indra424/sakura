@@ -11,7 +11,7 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
-var cekwaktu = Jam berapa sekarang;
+var cekwaktu = Jam berapa sekarang?;
 var waktu = new Date();
 var jam = waktu.getHours();
 var que = [
