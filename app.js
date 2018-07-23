@@ -150,7 +150,7 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if(jam == 12 || jam < 11)
+    if(jam == 12 || jam < 14)
        client.channels.get(channelChatbotId).send('My Message');
     if (message.content == cekwaktu)
         message.reply(jam + 8);
@@ -225,7 +225,9 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (message.content != '!mute' 
+    } else if (jam != 12
+              && jam != 13
+              && message.content != '!mute' 
               && message.content != '!unmute'
               && message.content != cekwaktu
               && message.content != que[0] 
