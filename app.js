@@ -103,9 +103,6 @@ client.on('ready', function (message) {
     //channel.sendMessage('Jangan Main-Main' )
     //channel.sendMessage('Aku Tidak Tahu Apa Yg Harus Kulakukan..' )
 });
-var jadwal= schedule.scheduleJob({hour: 8, minute: 9, dayOfWeek: 0}, function(){
- channelChatbotId.sendMessage('selamat sore hijra') ;
-});
 function search(key, array, remove) {
     if (remove) {
         for (let i = 0; i < array.length; i++) {
@@ -154,6 +151,9 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
+    var jadwal= schedule.scheduleJob({hour: 8, minute: 14, dayOfWeek: 0}, function(){
+ channelChatbotId.sendMessage('selamat sore hijra') ;
+});
     if (message.content == cekwaktu)
         message.reply(jam + 8);
     if (message.content == que[0])
