@@ -103,7 +103,7 @@ client.on('ready', function (message) {
     //channel.sendMessage('Jangan Main-Main' )
     //channel.sendMessage('Aku Tidak Tahu Apa Yg Harus Kulakukan..' )
 });
-var jadwal= schedule.scheduleJob({hour: 8, minute: 5, dayOfWeek: 0}, function(){
+var jadwal= schedule.scheduleJob({hour: 8, minute: 9, dayOfWeek: 0}, function(){
  channelChatbotId.sendMessage('selamat sore hijra') ;
 });
 function search(key, array, remove) {
