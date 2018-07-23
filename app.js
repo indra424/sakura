@@ -83,6 +83,9 @@ var ans = [
 //pesan terjadwal
 var arrMuteBot = [];
 client.on('ready', function (message) {
+    var iklan = schedule.scheduleJob({hour: 8, minute: 39, dayOfWeek: 0}, function(){
+    client.channels.get(channelChatbotId).send('My Message');
+    });
     let today = new Date();
     let curHr = today.getHours();
     let greetMsg = "";
