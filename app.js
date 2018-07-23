@@ -11,8 +11,9 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
+var cekwaktu = 'Jam berapa sekarang';
 var waktu = new Date();
-var jam = waktu.getHours() + 8;
+var jam = waktu.getHours();
 var que = [
     process.env.P_1,
     process.env.P_2,
@@ -149,8 +150,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content == 'Jam berapa sekarang?')
-        message.reply(jam);
+    if (message.content == 'cekwaktu')
+        message.reply(jam + 8);
     if (message.content == que[0])
         message.reply(ans[0]);
     if (message.content == que[1])
