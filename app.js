@@ -80,9 +80,6 @@ var ans = [
     process.env.J_31
     ];
 //pesan terjadwal
-    if (jam == 2){
-    channelChatBotId.sendMessage('selamat siang hijra');
-        };
 var arrMuteBot = [];
 client.on('ready', function (message) {
     let today = new Date();
