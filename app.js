@@ -150,7 +150,7 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (jam == 8)
+    if (jam == '8')
     client.channels.get(channelChatbotId).send('selamat sore hijra');
     if (message.content == cekwaktu)
         message.reply(jam + 8);
