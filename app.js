@@ -101,8 +101,9 @@ client.on('ready', function (message) {
     //channel.sendMessage('Jangan Main-Main' )
     //channel.sendMessage('Aku Tidak Tahu Apa Yg Harus Kulakukan..' )
 });
+//pesan terjadwal
 client.on('message'),function (message) {
-    if (jam == '3')
+    if (jam == '2')
     var pesan = client.channels.get(channelChatbotId);
     pesan.sendMessage('selamat siang hijra');
     }
