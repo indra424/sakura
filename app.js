@@ -28,7 +28,6 @@ var kocak = [
     'bosan gue ditanyain ama kamu mulu'
     ];
 var acak = Math.floor(Math.random() * kocak.length);
-var jawab = kocak[acak];
 var que = [
     process.env.P_1,
     process.env.P_2,
@@ -283,8 +282,8 @@ client.on('message', function (message) {
             console.log('simsimi say : ', msg);
             if(message.author.id == predator)
             message.reply(msg.split('simi').join('chanyeol').split('kamu').join('kak indra').split('lu').join('indra'));
-            if(message.author.id != predator)
-            message.reply(jawab);
+            if(message.author.id == kyura)
+            message.reply(msg.split('simi').join('chanyeol').split('kamu').join('kak hijra').split('lu').join('hijra').split('dia').join('hijraku');
         });
     }
 });
