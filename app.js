@@ -159,9 +159,9 @@ client.on('message', function (message) {
     if (waktu.getHours() >= mulai && waktu.getHours() <= akhir)
        client.channels.get(channelChatbotId).send('Kak hijra jangan begadang yah!!..nanti sakit lagi');
     if (message.author.id == kyura)
-        simkyura.push('kakak hijra');
+        simkyura.push(' tante hijra');
     if (message.author.id == predator)
-        simpredator.push('kakak indra');
+        simpredator.push(' kakak indra');
     if (message.content == cekwaktu)
         message.reply(jam + 8);
     if (message.content == que[0])
@@ -277,7 +277,7 @@ client.on('message', function (message) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
             var pesansimi = msg.split('simi').join('chanyeol');
-            message.reply(pesansimi + simpredator);
+            message.reply(pesansimi + simpredator + simkyura);
         });
     }
 });
