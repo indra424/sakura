@@ -277,7 +277,7 @@ client.on('message', function (message) {
             if (err) return console.error(err);
             console.log('simsimi say : ', msg)
             var pesansimi = msg.split('simi').join('chanyeol');
-            message.reply(pesansimi + simpredator + simkyura);
+            message.reply(pesansimi.split('kamu').join(simpredator));
         });
     }
 });
