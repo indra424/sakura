@@ -18,8 +18,6 @@ var waktu = new Date();
 var jam = waktu.getHours();
 var mulai = process.env.mulai;
 var akhir = process.env.akhir;
-var simkyura = [];
-var simpredator = [];
 var que = [
     process.env.P_1,
     process.env.P_2,
@@ -158,10 +156,6 @@ client.on('message', function (message) {
     //jawaban khusus
     if (waktu.getHours() >= mulai && waktu.getHours() <= akhir)
        client.channels.get(channelChatbotId).send('Kak hijra jangan begadang yah!!..nanti sakit lagi');
-    if (message.author.id == kyura)
-        simkyura.push(' tante hijra');
-    if (message.author.id == predator)
-        simpredator.push(' kak indra');
     if (message.content == cekwaktu)
         message.reply(jam + 8);
     if (message.content == que[0])
