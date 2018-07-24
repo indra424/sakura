@@ -167,9 +167,9 @@ client.on('message', function (message) {
     if (waktu.getHours() >= mulai && waktu.getHours() <= akhir)
        client.channels.get(channelChatbotId).send('Kak hijra jangan begadang yah!!..nanti sakit lagi');
     if (message.content == cekwaktu)
-        message.reply(jawab);
+        message.reply(Date.getHours());
     if (message.content == que[0])
-        message.reply(ans[0]);
+        message.reply(kocak[Math.floor(Math.random() * kocak.length)]);
     if (message.content == que[1])
         message.reply(ans[1]);
     if (message.content == que[2])
