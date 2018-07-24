@@ -145,7 +145,7 @@ client.on('message', function (message) {
 
     if (message.content == '!unmute') {
         if (search(message.author.id, arrMuteBot, true)) {
-            message.reply('Aku Merindukanmu');
+            message.reply(message.author.id);
         } else {
             return console.log('user not found : ', message.author.id);
         }
