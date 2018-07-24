@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const Simsimi = require('simsimi');
-const tugas = require('node-cron');
 const {
     token,
     channelChatbotId,
