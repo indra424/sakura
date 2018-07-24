@@ -152,7 +152,7 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if(jam >= mulai && jam <= akhir)
+    if (waktu.getHours() >= mulai && waktu.getHours() <= akhir)
        client.channels.get(channelChatbotId).send('Kak hijra jangan begadang yah!!..nanti sakit lagi');
     if (message.content == cekwaktu)
         message.reply(jam + 8);
@@ -227,7 +227,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (jam != mulai
+    } else if (waktu.getHours() != mulai
               && message.content != '!mute' 
               && message.content != '!unmute'
               && message.content != cekwaktu
