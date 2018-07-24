@@ -17,8 +17,6 @@ var simsimi = new Simsimi({
 var cekwaktu = 'Jam berapa sekarang?';
 var waktu = new Date();
 var jam = waktu.getHours();
-var mulai = process.env.mulai;
-var akhir = process.env.akhir;
 var kocak = [
     'chanyeol lelah',
     'aku udah bosan',
@@ -165,8 +163,6 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (waktu.getHours() >= mulai && waktu.getHours() <= akhir)
-       client.channels.get(channelChatbotId).send('Kak hijra jangan begadang yah!!..nanti sakit lagi');
     if (message.content == cekwaktu)
         message.reply(jam + 7);
     if (message.content == que[0])
@@ -240,8 +236,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-    } else if (waktu.getHours() != mulai
-              && message.content != '!mute' 
+    } else if (message.content != '!mute' 
               && message.content != '!unmute'
               && message.content != cekwaktu
               && message.content != que[0] 
