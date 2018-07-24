@@ -18,6 +18,17 @@ var waktu = new Date();
 var jam = waktu.getHours();
 var mulai = process.env.mulai;
 var akhir = process.env.akhir;
+var kocak = [
+    'chanyeol lelah',
+    'aku udah bosan',
+    'biarkan aku istirahat',
+    'pergi sana..aku ingin sendiri',
+    'aku sudah bosan dengan pertanyaanmu',
+    'kita putus',
+    'bosan gue ditanyain ama kamu mulu'
+    ];
+var acak = Math.floor(Math.random() * kocak.length);
+var jawab = kocak[acak];
 var que = [
     process.env.P_1,
     process.env.P_2,
@@ -273,7 +284,7 @@ client.on('message', function (message) {
             if(message.author.id == predator)
             message.reply(msg.split('simi').join('chanyeol').split('kamu').join('kak indra').split('lu').join('indra'));
             if(message.author.id != predator)
-            message.reply('bosan gue ditanyain ama kamu mulu');
+            message.reply(jawab);
         });
     }
 });
