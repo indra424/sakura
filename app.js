@@ -161,7 +161,7 @@ client.on('message', function (message) {
     if (message.author.id == kyura)
         simkyura.push(' tante hijra');
     if (message.author.id == predator)
-        simpredator.push(' kakak indra');
+        simpredator.push(' kak indra');
     if (message.content == cekwaktu)
         message.reply(jam + 8);
     if (message.content == que[0])
