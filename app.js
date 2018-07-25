@@ -277,7 +277,7 @@ client.on('message', function (message) {
             if(message.author.id == predator)
             message.reply(msg.split('simi').join('chanyeol').split('kamu').join('kak indra').split('lu').join('indra'));
             if(message.author.id == kyura)
-            message.reply(msg.split('simi').join('chanyeol').split('kamu').join('kak hijra').split('lu').join('hijra').split('dia').join('hijraku'));
+            message.reply(msg.split('simi').join('chanyeol').split('kamu').join('kak hijra').split('lu').join('hijra'));
         });
     }
 });
