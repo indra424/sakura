@@ -167,7 +167,7 @@ client.on('message', function (message) {
         if (pesan.length => 2){
        client.channels.get(channelChatbotId).send(pesan);
             }
-        }
+        };
     if (message.content == cekwaktu)
         message.reply(jam + 7);
     if (message.content == que[0])
