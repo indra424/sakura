@@ -165,7 +165,7 @@ client.on('message', function (message) {
     }
     //jawaban khusus
     if (message.content.startsWith == '?pilih')
-       message.reply(pilihan.random());
+       message.reply(pilihan[Math.floor(Math.random() * pilihan.length)] );
     if (message.content == cekwaktu)
         message.reply(jam + 7);
     if (message.content == que[0])
