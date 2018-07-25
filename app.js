@@ -14,7 +14,8 @@ var simsimi = new Simsimi({
         key: process.env.KEY_SIMI
     });
 var cekwaktu = 'Jam berapa sekarang?';
-var pilihan = message.content.split('atau');
+var pilihan = pesanku.split('atau');
+var pesanku = message.content;
 var waktu = new Date();
 var jam = waktu.getHours();
 var kocak = [
