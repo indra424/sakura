@@ -14,8 +14,6 @@ var simsimi = new Simsimi({
         key: process.env.KEY_SIMI
     });
 var cekwaktu = 'Jam berapa sekarang?';
-var pilihan = pesanku.split('atau');
-var pesanku = message.content;
 var waktu = new Date();
 var jam = waktu.getHours();
 var kocak = [
@@ -164,8 +162,13 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content.startsWith == '?pilih')
-       message.reply(pilihan[Math.floor(Math.random() * pilihan.length)] );
+    if (message.content.startsWith == '?pilih'){
+           var pesan = message.content.split('atau');
+        if (pesan.length => 2){
+       message.reply(pesan.random());
+            }
+        }
+    return;
     if (message.content == cekwaktu)
         message.reply(jam + 7);
     if (message.content == que[0])
