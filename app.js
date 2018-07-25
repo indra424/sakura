@@ -164,7 +164,7 @@ client.on('message', function (message) {
     //jawaban khusus
     var pesan = message.content;
     if (message.content.startsWith == '?pilih')
-       client.channels.get(channelChatbotId).send(pesan);
+       message.reply(pesan);
     if (message.content == cekwaktu)
         message.reply(jam + 7);
     if (message.content == que[0])
