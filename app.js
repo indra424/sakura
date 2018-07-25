@@ -165,7 +165,7 @@ client.on('message', function (message) {
     if (message.content.startsWith == '?pilih'){
            let pesan = message.content.split('atau');
         if (pesan.length => 2){
-       message.reply(pesan.random());
+       client.channels.get(channelChatbotId).send(pesan);
             }
         }
     return;
