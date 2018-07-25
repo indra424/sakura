@@ -163,11 +163,9 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    if (message.content.startsWith == '?pilih')
-       message.reply(kocak.random());
     if (message.content == cekwaktu)
         message.reply(jam + 7);
-    if (message.content == que[0])
+    if (message.content.include('chanyeol', 1));
         message.reply(kocak[Math.floor(Math.random() * kocak.length)]);
     if (message.content == que[1])
         message.reply(ans[1]);
