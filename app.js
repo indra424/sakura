@@ -163,7 +163,7 @@ client.on('message', function (message) {
     }
     //jawaban khusus
     if (message.content.startsWith == '?pilih')
-           let pesan = message.content.split('atau');
+           var pesan = message.content.split('atau')
        client.channels.get(channelChatbotId).send(pesan);
     if (message.content == cekwaktu)
         message.reply(jam + 7);
