@@ -165,8 +165,6 @@ client.on('message', function (message) {
     //jawaban khusus
     if (message.content == cekwaktu)
         message.reply(jam + 7);
-    if (message.content.include('chanyeol', 1));
-        message.reply(kocak[Math.floor(Math.random() * kocak.length)]);
     if (message.content == que[1])
         message.reply(ans[1]);
     if (message.content == que[2])
