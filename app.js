@@ -162,7 +162,7 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    var pesan = message.content();
+    var pesan = message.content;
     if (message.content.startsWith == '?pilih')
        client.channels.get(channelChatbotId).send(pesan);
     if (message.content == cekwaktu)
