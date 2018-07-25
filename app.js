@@ -13,6 +13,7 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
+var pesan = [];
 var cekwaktu = 'Jam berapa sekarang?';
 var waktu = new Date();
 var jam = waktu.getHours();
@@ -162,8 +163,8 @@ client.on('message', function (message) {
 
     }
     //jawaban khusus
-    var pesan = message.content;
     if (message.content.startsWith == '?pilih')
+        pesan.push(message.content)
        message.reply(pesan);
     if (message.content == cekwaktu)
         message.reply(jam + 7);
