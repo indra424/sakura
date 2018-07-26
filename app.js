@@ -101,9 +101,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-        //responku
-  if (message.content == 'cek')
-    message.reply(message.content);
+        //respon
     } else if (message.content != '!mute' 
               && message.content != '!unmute'
               ) {
