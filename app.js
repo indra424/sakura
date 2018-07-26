@@ -13,6 +13,10 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
+var responku = {
+    'siapa': 'saya',
+    'saya': 'siapa'
+    };
 var cekwaktu = 'Jam berapa sekarang?';
 var waktu = new Date();
 var jam = waktu.getHours();
