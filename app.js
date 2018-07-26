@@ -16,7 +16,7 @@ var simsimi = new Simsimi({
 var responku = [
     'siapa': 'saya',
     'saya': 'siapa'
-    ]
+    ];
 var cekwaktu = 'Jam berapa sekarang?';
 var waktu = new Date();
 var jam = waktu.getHours();
