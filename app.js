@@ -89,7 +89,7 @@ client.on('message', function (message) {
 
     if (message.content == '!unmute') {
         if (search(message.author.id, arrMuteBot, true)) {
-            message.reply('aku merindukanmu');
+            message.reply('aku merindukan kalian');
         } else {
             return console.log('user not found : ', message.author.id);
         }
