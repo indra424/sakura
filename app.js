@@ -7,6 +7,11 @@ const {
     kyura,
     predator
 } = require('./config.json');
+const responseObject = {
+  "ayy": "Ayy, lmao!",
+  "wat": "Say what?",
+  "lol": "roflmaotntpmp"
+};
 
 var simsimi = new Simsimi({
         lc : process.env.LC_SIMI,
@@ -103,6 +108,8 @@ client.on('message', function (message) {
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
         //responku
+  if(responseObject[message.content])
+    message.reply(responseObject[message.content]);
     } else if (message.content != '!mute' 
               && message.content != '!unmute'
               ) {
