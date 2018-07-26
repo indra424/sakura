@@ -78,7 +78,7 @@ function search(key, array, remove) {
 }
 
 client.on('message', function (message) {
-    var responKu = message.content();
+    var responKu = new message.content;
     if (message.author.bot) return;
     //private message to bot
     if (message.channel.type === 'dm') {
