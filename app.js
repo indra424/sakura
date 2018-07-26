@@ -13,10 +13,6 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
-var responku = [
-    'siapa': 'kamu',
-    'saya': 'kita'
-    ];
 var cekwaktu = 'Jam berapa sekarang?';
 var waktu = new Date();
 var jam = waktu.getHours();
@@ -106,9 +102,7 @@ client.on('message', function (message) {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
-        //respon
-    if(responku[message.content])
-    message.reply(responku[message.content]);
+        //responku
     } else if (message.content != '!mute' 
               && message.content != '!unmute'
               ) {
