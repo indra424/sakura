@@ -107,7 +107,7 @@ client.on('message', function (message) {
               && message.content != '!unmute'
               ) {
         simsimi.listen(message.content, function (err, msg) {
-            if (err) message.reply(err);
+            if (err) return message.reply('saya butuh key');
             console.log('simsimi say : ', msg);
             if(message.author.id == predator)
             message.reply(msg.split('simi').join('chanyeol').split('kamu').join('kak indra').split('lu').join('indra'));
