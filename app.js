@@ -14,8 +14,8 @@ var simsimi = new Simsimi({
         key: process.env.KEY_SIMI
     });
 var responku = [
-    'siapa': 'saya',
-    'saya': 'siapa'
+    'siapa': 'kamu',
+    'saya': 'kita'
     ];
 var cekwaktu = 'Jam berapa sekarang?';
 var waktu = new Date();
