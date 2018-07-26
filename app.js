@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const Simsimi = require('simsimi');
+const responku = require('./respon.json');
 const {
     token,
     channelChatbotId,
