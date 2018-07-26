@@ -107,7 +107,7 @@ client.on('message', function (message) {
         arrMuteBot.push(message.author.id);
         message.reply('Aku Diam Aja Deh....');
         //respon
-    if(message.content == responku[message.content])
+    if(responku[message.content])
     message.reply(responku[message.content]);
     } else if (message.content != '!mute' 
               && message.content != '!unmute'
