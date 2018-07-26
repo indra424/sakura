@@ -13,7 +13,7 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
-var responku = {
+const responku = {
     'siapa': 'saya',
     'saya': 'siapa'
     };
