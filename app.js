@@ -110,10 +110,10 @@ client.on('message', function (message) {
             console.log('simsimi say : ', msg);
             if(message.author.id == predator)
                 var ppredator = msg.replace(/kak/g, 'kak indra');
-            message.reply(ppredator.replace(/simi/g, 'chanyeol').replace(/kamu/g, 'kak indra').replace(/kakak/g, 'kakak indra'));
+            message.reply(ppredator.replace(/simi/g, 'chanyeol').replace(/kamu/g, 'kak indra'));
             if(message.author.id == kyura)
                 var pkyura = msg.replace(/kak/g, 'kak hijra');
-            message.reply(pkyura.replace(/simi/g, 'chanyeol').replace(/kamu/g, 'kak hijra').replace(/kakak/g, 'kakak hijra'));
+            message.reply(pkyura.replace(/simi/g, 'chanyeol').replace(/kamu/g, 'kak hijra'));
         });
     }
 });
