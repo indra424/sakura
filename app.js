@@ -98,7 +98,7 @@ client.on('message', function (message) {
     if (search(message.author.id, arrMuteBot, false)) return;
 //respon pilih
     if (message.content.startsWith == '!pilih')
-        var cpesan = message.content.split("").split("!pilih").split("atau");
+        var cpesan = message.content.split("!pilih").split("atau");
         message.reply(cpesan[1]);
     if (message.content == '!mute') {
         if (search(message.author.id, arrMuteBot, false)) return;
