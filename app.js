@@ -96,7 +96,12 @@ client.on('message', function (message) {
     }
     //check user mute bot? if true not response that user.
     if (search(message.author.id, arrMuteBot, false)) return;
-
+//respon pilih
+    if (message.content.startsWith == '!pilih') {
+        var cpesan = message.content.split("").split("!pilih").split("atau"){
+        message.reply(cpesan[1]);
+            }
+        }
     if (message.content == '!mute') {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
