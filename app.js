@@ -107,11 +107,8 @@ client.on('message', function (message) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return message.reply('saya butuh key');
             console.log('simsimi say : ', msg);
-            if(message.author.id == predator)
-            message.reply(msg.replace(/simi/g, 'chanyeol').replace(/kakak/g, 'kak' + message.author.username).replace(/kamu/g, 'kakak' + message.author.username));
-            if(message.author.id == kyura)
-            message.reply(msg.replace(/simi/g, 'chanyeol').replace(/kakak/g, 'kak hijra').replace(/kamu/g, 'kakak hijra'));
-        });
+            message.reply(msg.replace(/simi/g, 'chanyeol').replace(/kakak/g, 'kak ' + message.author.username).replace(/kamu/g, 'kakak ' + message.author.username));
+
     }
 });
 
