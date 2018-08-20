@@ -12,7 +12,7 @@ var simsimi = new Simsimi({
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
     });
-var admin = message.guild.roles.find('name', 'OWNER');
+
 var waktu = new Date();
 var jam = waktu.getHours();
 var kocak = [
@@ -104,7 +104,7 @@ client.on('message', function (message) {
     } else if (message.content != '!mute' 
               && message.content != '!unmute'
               && message.isMentioned(client.user)
-              && admin
+              && message.guild.roles.find('name', 'OWNER');
               ) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return message.reply('saya butuh key');
