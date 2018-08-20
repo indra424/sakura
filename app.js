@@ -103,6 +103,7 @@ client.on('message', function (message) {
         //respon
     } else if (message.content != '!mute' 
               && message.content != '!unmute'
+              && message.isMentioned(client.user)
               ) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return message.reply('saya butuh key');
