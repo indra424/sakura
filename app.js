@@ -7,7 +7,7 @@ const {
     kyura,
     predator
 } = require('./config.json');
-var simsimi = new simsimi({
+var simsimi = new Simsimi({
         lc : process.env.LC_SIMI,
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
