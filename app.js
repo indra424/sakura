@@ -1,13 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const Simsimi = require('simsimi');
 const {
     token,
     channelChatbotId,
     kyura,
     predator
 } = require('./config.json');
-var simsimi = new Simsimi({
+var simsimi = ({
         lc : process.env.LC_SIMI,
         ft : process.env.FT_SIMI,
         key: process.env.KEY_SIMI
