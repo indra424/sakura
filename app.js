@@ -102,9 +102,6 @@ client.on('message', function (message) {
     } else if (message.content != '!mute' 
               && message.content != '!unmute'
               && message.isMentioned(client.user)
-              && message.member.roles.some(r=>["OWNER", "MODERATOR"].includes(r.name))
-
-
               ) {
         simsimi.listen(message.content, function (err, msg) {
             if (err) return message.reply('saya butuh key');
