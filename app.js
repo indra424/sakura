@@ -104,8 +104,6 @@ client.on('message', function (message) {
               && message.isMentioned(client.user)
               ) {
         simsimi.listen(message.content, function (err, msg) {
-            if (err) return message.reply('saya butuh key');
-            console.log('simsimi say : ', msg);
             message.reply(msg.replace(/simi/g, 'chanyeol').replace(/kakak/g, 'kak ' + message.author.username).replace(/kamu/g, 'kakak ' + message.author.username));
   });
     }
