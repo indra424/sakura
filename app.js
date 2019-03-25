@@ -1,15 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const Simsimi = require('simsimi');
 const {
     token,
     channelChatbotId,
-    predator
+    simsimiOption
 } = require('./config.json');
-var simsimi = ({
-        lc : process.env.LC_SIMI,
-        ft : process.env.FT_SIMI,
-        key: process.env.KEY_SIMI
-    });
+
+var simsimi = new Simsimi(simsimiOption);
 
 var waktu = new Date();
 var jam = waktu.getHours();
