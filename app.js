@@ -101,7 +101,6 @@ client.on('message', function (message) {
         //respon
     } else if (message.content != '!mute' 
               && message.content != '!unmute'
-              && message.isMentioned(client.user)
               ) {
         simsimi.listen(message.content, function (err, msg) {
             message.reply(msg.replace(/simi/g, 'chanyeol').replace(/kakak/g, 'kak ' + message.author.username).replace(/kamu/g, 'kakak ' + message.author.username));
