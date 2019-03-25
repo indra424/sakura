@@ -103,7 +103,9 @@ client.on('message', function (message) {
               && message.content != '!unmute'
               ) {
         simsimi.listen(message.content, function (err, msg) {
-            message.reply(msg.replace(/simi/g, 'chanyeol').replace(/kakak/g, 'kak ' + message.author.username).replace(/kamu/g, 'kakak ' + message.author.username));
+            if (err) return message.reply('key sudah expire');
+            console.log('simsimi say : ', msg);
+            message.reply(msg.replace(/simi/g, 'angela').replace(/kakak/g, 'kak ' + message.author.username).replace(/kamu/g, 'kakak ' + message.author.username).replace(/simsimi/g, 'angela'));
   });
     }
 });
