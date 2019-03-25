@@ -115,6 +115,5 @@ client.on('message', function (message) {
             } catch (err) {
                 console.error(err)   
             }
-        });
 
 client.login(token);
