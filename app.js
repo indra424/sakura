@@ -97,23 +97,14 @@ client.on('message', function (message) {
     if (message.content == '!mute') {
         if (search(message.author.id, arrMuteBot, false)) return;
         arrMuteBot.push(message.author.id);
-        message.reply('Aku Diam Aja Deh....');
-        //respon
-    } else if (message.content != '!mute' 
-              && message.content != '!unmute'
-              ) {
+        message.reply('ชิชิชิ บังบาจ mute เค้าไปกะได้ *หากต้องการ unmute พิมพ์ !unmute');
+    } else if (message.content != '!mute' && message.content != '!unmute') {
         simsimi.listen(message.content, function (err, msg) {
-            if (err) {
-                if (err.result === 509) {
-                    //message.reply(`คีย์ Simsimi หมดอายุแล้ว เรียก ${author} ให้โหน่ยยยย...`);
-                    console.log('คีย์ Simsimi หมดอายุแล้ว')
-                }
-                return console.log(chalk.hex('#ff0000')(`error result : ${err.result}, message: ${err.msg}`));
-            }
-            try {
-                message.reply(msg);
-            } catch (err) {
-                console.error(err)   
-            }
+            if (err) return console.error(err);
+            console.log('simsimi say : ', msg)
+            message.reply(msg);
+        });
+    }
+});
 
 client.login(token);
