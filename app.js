@@ -103,11 +103,18 @@ client.on('message', function (message) {
               && message.content != '!unmute'
               ) {
         simsimi.listen(message.content, function (err, msg) {
-            if (err) return message.reply('key sudah expire');
-            console.log('simsimi say : ', msg);
-            message.reply(msg.replace(/simi/g, 'angela').replace(/kakak/g, 'kak ' + message.author.username).replace(/kamu/g, 'kakak ' + message.author.username).replace(/simsimi/g, 'angela'));
-  });
-    }
-});
+            if (err) {
+                if (err.result === 509) {
+                    //message.reply(`คีย์ Simsimi หมดอายุแล้ว เรียก ${author} ให้โหน่ยยยย...`);
+                    console.log('คีย์ Simsimi หมดอายุแล้ว')
+                }
+                return console.log(chalk.hex('#ff0000')(`error result : ${err.result}, message: ${err.msg}`));
+            }
+            try {
+                message.reply(msg);
+            } catch (err) {
+                console.error(err)   
+            }
+        });
 
 client.login(token);
